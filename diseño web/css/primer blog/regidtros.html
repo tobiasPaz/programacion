@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aprendiendo CSS con Dalto</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1><h2>para probar</h2></h1>
+		<h2>para probar otra vez</h2>
+		<h1 class="titulo-de-h1">Mi primer titulo en CSS</h1>
+		<h1>datos de selectors</h1>
+		<p id="el-primer-parrafo">
+			Tipos de CSS selectors:<br>
+			Para selecionar en CSS se debe de usar un selector que varia en tipos.<br>Universal(*)<br>De tipo(selecionamos la etiqueta que queremos modiicar)<br>De clases(Le damos a una etiqueta una clase y el CSS seleciona a todas las etiquetas de esa misma lcase para modificarlas. Antes de poner la clase en el selector se debe de poner un punto para indicar que es una clase)<br>Por ID(Le damos una ID a una etiqueta y luego para pner el nombre de la etiqueta en el selecro debemos de poner primero un "#")<br>Por atributos(seleccionamos ela tributo que queremos modificar y lograremos modificar a todas las etiquetas que contengan ese atributo. Para poder poner el atributo como selector demos colocar el atributo exacto dentro de corchetes)<br>De manera descendiente(sirve para seleccionar etiquetas dentro de otras etiquetas. para ponerlo como slector debemos poner de mayor a menor las cajas que lo contengan)<br>Por pseudo clase(se trata de las clases que le damos al selector. Ej: si utilizamos la ":hover", la modificacion solo actuara cuando pongamos el raaton encima del selector)
+		</p>
+		<button>apretame para continuar</button>
+		<input type="text" value="escribe AQUI">
+		<input type="email" atributo="para-modificar">
+		<h1 class="titulo" id="primer-titulo" atributo=yoque se style="color: black;">Segundo titulo/Principio de especifisidad</h1>
+		<p>
+			la jerarquia y la prioridad es de:<br>
+			<ol>
+				<li>!important</li>
+				<li>estilos en linea</li>
+				<li>identificadores</li>
+				<li>clases</li>
+				<li>pseudo-clases</li>
+				<li>atributos</li>
+				<li>elementos</li>
+				<li>pseudo-elementos</li>
+		</p>
+		<div class="form">
+			<h1 class="form__h1">medidas</h1>
+			<p>
+				Para controlar las medidas de una etiqueta demos de utilizar la etiqueta "font-side". Para las medidas podemos utilizar medidas fijas(pixeles, cm, mm, etc.) y medidas relativas.<br>
+				Para las medidas relativas podemos usar "em" y "rem". En el caso de "em" este valdra aproximadamente 16px pero podra depender del navegador. Pero para darle una medida fija solo debemos de ponerle una medida a la caja contenedora.
+			</p>
+			<h1>demas cosas</h1>
+			<p>
+				con los atributos "padding" y "margin" podemos controlar los margenes de la pagina.<br>
+				Con el atributo "background" podemos controlar el condo de la etiqueta que seleccionemos y lo podemos sumar con otros atributos como "color", etc.<br>
+				Con el atributo "width" podemos controlar cuanto espacio ocupa de manera horizonta la etiqueta dentro de la pantalla. El espacio que ocupara se medira en porcentaje de la pantalla y para la unidad de medida debe de ser "vw".<br>
+				Con el atributo "height" podemos controlar el espacio que ocupa la etiqueta de manera vertical. y al igual que el atributo "width" se medira de manera porcentual pero con la unidad de medida "vh"
+		</div>
+		<div class="form">
+			<h1 class="form__h1">Propiedadesd de texto</h1>
+			<p>
+				La propiedad "font-family" que se utiliza para cambiar la tipografia de la fuente. Para implemeter tipografias externas solo se debe de copiar el link de l tipografia, colocarlo dentro de head de HTML dentro de una etiqueta "link" y poner el nombre de la tipografia dentro de "font-family".<br>
+				La propiedad "line-height" se utiliza para modificar el tamaño de la etiqueta dependiendo de su base, si el line-height es de dos este duplicara su tamaño desde el centro<br>
+				La propiedad "font-weight" nos sirve para modificar el grosor de la fuente.<br>
+
+			</p>
+		</div>
+		<div class="form">
+			<h1 class="form__h1">propiedades de cajas</h1>
+			<p>
+				Las cajas se reigen por el box model, el box model es una regla de la propieda que es dirigida por cuatro atributos: el conten, el padding, el border y el margin.
+				Para poder modificar las cajas de las etiquetas podemos usar la propiedad "padding", que la utilizamos para modificar la distancia que hay del texto a la caja. La caja se divide en cuatro laterales:"top, right, bottom y lef". se puede modificar cada lateral tansolo especificando en el atributo padding a cual se refiere.<br>
+				tambien para modificar la caja podemos utilizar el atributo display que nos sirve para modificar si la caja es en linea o si es en bloque.<br>
+				Con el atributo "text-aling" nos permite aliner el texto dentro de la caja de manera horizontal.<br>
+				con el atributo "margin" nos permite modificar el margen que hay entre las cajas. Al igual que el padding se puede manejar por top, right, bottom y left.<br>
+				Con el atribut "border-radius" podemos redondear los bordes de la caja, no del texto. Aun que tambien podemos usar el atributo "border en solitario oara agregar un borde.<br>
+				Tambien tenemos el atributo "box-shadow" que nos sirve para darle sombra a la caja. la primera caracteristica que le demos sera para controlr el eje Y, la segunda para el eje X, la tercera para el desenfoque y por ultimo el color. suecde los msimo con el atributo "text-shadow"<br>
+				Con el atributo "transform" podemos transformar la caja, si lo combinamos con la caracteristica rotate podemos rotar la caja, y esta caracteristica se rige por grados
+			</p>
+			<h2>h2 de pruebas</h2>
+		</div>
+	</body>
+
+	<body>
+		<div class="container">
+			<div class="left">izquierda</div>
+			<div class="right">derecha</div>
+		</div>
+		<article id="position">soy prop de posicion</article>
+		<div class="div-de-prueba">lala</div>
+		<div class="div-de-prueba">lele</div>
+		<span>span 1</span>
+		<span>span 2</span>
+		<table>
+			<tr>
+				<th>normbre</th>
+				<th>apellido</th>
+			</tr>
+			<tr>
+				<td>lucero</td>
+				<td>torchia</td>
+			</tr>
+			<tr>
+				<td>luciana</td>
+				<td>Gonzales</td>
+			</tr>
+			<tr>
+				<td>Matias</td>
+				<td>Paz</td
+			</tr>
+		</table>
+		<ul>
+			<li>unoxecwc</li>
+			<li>dos3ec3wec</li>
+			<li>tres32ec2ec</li>
+		</ul>
+		<a href="https://www.google.com">google</a>
+		<p class="texto-2">texto  o que se yo mi vida</p>
+		<div class="de-margen">
+			practica de margen
+		</div>
+		<article id="back-ground">
+			soy la propiedad de back ground
+		</article>
+		<h1 class="color">propiedad color</h1>
+		<h1 id="titulo">titulo</h1>
+		<p class="texto">texto de prueba para CSS de practica</p>
+		<p class="texto especial">texto de prueba para CSS de practica</p>
+		<p class="especial">texto de prueba para CSS de practica</p>
+		<div>
+			<p>hola mundo</p>
+			<h2>soy un sub-titulo</h2>
+			<h3>soy un sub-sub-titulo</h3>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: #efefef;
+}
+
+header {
+	background-color: #559;
+	color: white;
+	padding: 0.5rem 0 0 0;
+}
+
+header h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+header div {
+	transition: background-color 0.3s ease;
+
+	display: inline-block;
+	padding: 1rem 10%;
+	margin: 0 0;
+}
+
+header div:hover {
+	background-color: #669;
+}
+
+header div a {
+	font-size: 1.1rem;
+	display: inline-block;
+}
+
+section {
+	width: 400px;
+	margin: 0 auto;
+}
+
+section article {
+	transition: box-shadow 0.3s ease;
+	background-color: #fff;
+	margin: 1rem 0;
+	border-radius: 0.5rem;
+	padding: 0.25rem 0;
+}
+
+section article:hover {
+	box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+section article h2, section article p {
+	margin: 1rem;
+}
+
+footer {
+	background-color: #559;
+	color: white;
+	text-align: center;
+}
+
+footer p {
+	display: inline-block;
+	padding: 0 28rem;
+	text-align: center;
+}
+
+footer a {
+	transition: color 0.3s ease;
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: indianred;
+}

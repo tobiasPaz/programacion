@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pruebas de JavaScript</title>
+	</head>
+	<body>
+		<h1>Variables</h1>
+			<h3>tipos de datos</h3>
+				<p>Los tipos de datos son:</p>
+				<ul>
+					<li>string: Son cadenas de texto y se colocan dentro de comillas</li>
+					<li>number: numeros y no se olocan dentro de comillas</li>
+					<li>boolean: se basa en dos valores; 0 y 1. Pero lo podemos traducier en "true" o "false"</li>
+					<li>symbol</li>
+				</ul>
+				<p>Aun que "Symbol" suele considerarse un tipo de dato especial.</p>
+			<h3>Tipos especiales de datos</h3>
+				<p> Los tipos de datos especiales son 3, estos son:</p>
+				<ul>
+					<li><b>indefinido:</B>Las variables indefinidas pueden ser:
+						<ul>
+							<li>Let: Nos permite declarar que existe una variable pero que todadia no esta definida. Aun que despues se la puede inicializar</li>
+							<li>Const: Nos permite declarar y inicializar al mismo tiempo una variable que no podra ser modificada </li>
+						<li>Var</li>
+						</ul>
+					</li>
+					<li><b>Null:</b>Nos permite identificar que la variable esta vacia/nula. Pero se tomara como que esta inicializada.</li>
+					<li><b>NaN:</b>Nos hace referencia a que la operacion no se pueda realizar por que uno de los daros no es un numero(Not A Number)</li>
+				</ul>
+			<h3>Scope</h3>
+				<p>El scope es la accion de colocar varia variables en una sola linea de codigo. Etas variables se deben de separar en numeros.</p>
+			<h3>Hoisting</h3>
+			<h3>Prompt</h3>
+				<p>Prompt es una funcion parecida a una alerta que nos permite recopilar un dato para agregarlo como dato a una variable</p>
+			<h3>Operadores:</h3>
+				<p>dentro de JS tenemos varios operadores basicos pero en cuention se resaltan 2; de asignacion y operadores aritmeticos.</p>
+				<ul>
+					<li><b>Operadores de asignacion:</b>Un operador de asignacin asigna un valor al operando de la izquierda basado en el valor operando de la derecha</li>
+					<li><b>Operadores aritmeticos:</b>Los operadores aritmeticos toman valores numericos como sus operandos y retornan un valor <b>unico</b></li>
+				</ul>
+				<p>Los operadores de aignacion son: <br><b>operador de asignacion:</b>(=)Se utiliza para asignar un valor a una variable<br><B>operadores de adiccion:</B>(+=):se utiliza para la suma<br><B>operador desustraccion:</B>(-=)Se utiliza para la resta<br><B>operador de multiplicacion:</B>(*=)Se ustiliza para la multiplicacion<br><B>operador de division:</B>(/=)se utiliza para la divicion<br><B>operador de resto:</B>(%=)Se utiliza para el resto de una divicion<br><B>operador de exponencializacion:</B>(**=)Se utiliza ara elevar un numero a un exponente<br><B>operado de desplazamiento a la derecha:</B>(>>=)<br><B>operador de desplazamiento a la izqierda:</B>(<<=)<br><B>operador sin signo de des`lazamiento a la derecha</B>(>>>=)<br><B>operador AND:</B>(&=)<br><b>operador XOR:</b>(^=)<br><b>operador OR:</b>(|=)
+				</p>
+				<p>Los operadores aritmeticos son:<br>
+					<b>addition:</b>(+)<br>
+					<b>decrement:</b>(--)<br>
+					<b>division:</b>(/)<br>
+					<b>exponentiation:</b>(**)<br>
+					<b>increment</b>(++)<br>
+					<b>multiplication</b>(*)<br>
+					<b>remander:</b>(%)<br>
+					<b>subtraction:</b>(-)<br>
+					<b>unary negation:</b>(-)<br>
+					<b>unary plus:</b>(+)<br>
+				</p>
+			<h3>Concatenacion:</h3>
+				<p>La concatenacion es la accion de unir dos variables en unas sola linea de codigo. Cuando en la linea de cogigo se detecta un texto, se tomara automaticamente toda linea de codigo como strings y no como numbers.<br>
+				Para evitar tener que poner una variable de tipo string podemos usar la funcion (.concat) que nos permitira concatenar numbers y que estos no se operen.</p>
+			<h3>operadores intermedios:</h3>
+				<p>Dentro de los operadores intermedios estan los operadores <b>logicos</b> y los operadores de <b>comparacion</b>.<br>
+				Los operadores de comparacion comparan dos expresiones y devuelven un valor boolean que representan la relacion de sus valores. Algunos operadores de comparacion son:
+					<ul>
+						<li><b>Equality(x == b)</b>:se utiliza para saber si un dato es igual que otro, y lo devuelve en boolean(truo or false)</li>
+						<li><b>Inequality(x !== b)</b>: se utiliza para saber si un dato es desigual que otro, y lo devuelve en boolean</li>
+						<li><b>Identify(x === b)</b>:ESte operador compara si son estrictamete iguales tomando en cuanta el tipo de dato que sea. el resultado lo devulve en boolean.</li>
+						<li><b>Non-identify(x !== b)</b>: este operador verifica si son estrictamente desiguales y da el resultado en boolean.</li>
+						<li><b>Greater than(x > b)</b>:este operador se utiliza para verificar que un valor es mayor que otro. el resultado sera de tipo boolean.</li>
+						<li><b>Greater than or equal(a >= b)</b>:este operador se utiliza para verificar que un valor es mayor o igual que otro. el resultado sera de tipo boolean.</li>
+						<li><b>Less than(x < b)</b>:ese operador se utiliza para verificar que un valor es menor que otro. el resultadose dara en boolean.</li>
+						<li><b>Less than or equal(x <= b)</b>:ese operador se utiliza para verificar que un valor es menor o igual que otro. el resultadose dara en boolean.</li>
+
+					</ul>
+				Los operadores logicos nos devuelven un resultados a partir de que se cumpla o no una condicion, su resultado es booleano y sus operandos son valores logicos o asimilables a ellos. Algunos de sus operadores son:
+					<ul>
+						<li>and(&&):solo acepta valores booleanos, y si alguna de los dos datos es falso, el resultado sera falso.</li>
+						<li>or(||):solo acepta datos booleanos, y si alguno de los datos es verdarero el resultado sera verdaro.</li>
+						<li>(!):solo acepta valores boolean. Lo que hace es que convierte los valores en el contrario, osea si es true, el resultado sera false.
+					</ul>
+				</p>
+			<h3>Camel Case:</h3>
+			<h3>Condicionales:</h3>
+				<P>Los condicinales es una sentencia que nos permite validar algo para ejecutar un bloque. Algunos de estos condicionales son:</P>
+					<ul>
+						<li>If: nos permite ejecutar el bloque si la afirmacion es verdadera.</li>
+						<li>Else if: nos permite que si la primera condicion no se cumple, puede que esta si. Podemos poner infinidades de "else if".</li>
+						<li>Else: nos permite que si ninguna condicion anterior se cumplio. esta lo hara.</li>
+					</ul>
+		<h1>Capitulo 2:</h1>
+			<h3>Arrays:</h3>
+				<p>Los "Arrays" a comparacion de las variables que solo pueden contener un dato, estos pueden contener varios datos, para poder escoger estos datos de manera individual solo debemos de colocar su posicion(que se debe de manrcar con [])</p>
+			<h3>Arrays asociativos:</h3>
+				<p>Los arrays asociativos nos permiten asociar los datos de los arrays a algo. Para poder asociar los datos a algo solo demos de poner lo asociado a la izquierda del dato junto con ds puntos, para llamar los datos solo debemos de escribir el asociado.</p>
+			<h3>Bucles y la Iteracion:</h3>
+				<h4>While:</h4>
+					<p>El condicuonal "while" es un bucle que nos permite hacer  que si la condicion se cumple y el bloque se ejecuta, se volvera a cuestionar la condicion a ver si esta se sigue cumpliendo y poder volver a ejecutar el progama en bucle. </p>
+				<h4>Do While:</h4>
+					<p> con el blucle "do while" lo que hacemos es que primero se ejecute el bloque y despues se compruebe la condicion. </p>
+				<h4>breaker: </h4>
+				 	<p>El break es el que termina el bucle de "do while" y "while". Para esto tenemos varias opciones pero la mas recomendable es usar un "if" dentro del bloqu y que dentro del bloqeu del if tenga el comando "break" </p>
+				<h4>continue:</h4>
+				 	<p>es un comando que nos permite hacer que todo despues de este comando dentro del blucle no se realize, y funciona dentro de un bloque condicional como break.</p>
+				<h4>For, For in, For off y </h4>
+				 	<ul>
+				 		<li><b>For:</b>el "for" es un bucle de terminado, osea que podemos decirle cuantas veces se va a ejecutar. la variable que creemos dentro de "for" solo va a existir dentro de este bluque y nada mas. Aca es donde tambien vemos las partes de un blucle que son tres: "declaracion e inicializacion", "condicion" y "iteracion". </li>
+				 		<li><b>For In: se usa dentro de el bucle for y con esta condicion podemos hacer que objetos de los arrays nos devuelvan su posicion.</b></li>
+				 		<li><b>For Of:</b>se utiliza igual que for IN pero en vez de devolvernos la posicion de los obejtos este nos devuelve los objetos sin modificaciones en si.</li>
+				 		<li><b>label:</b></li>
+				 	</ul>
+			<h3>Funciones:</h3>
+				<p>una funcion es una procion de codigo que posee un nombre, asi nos ahorramos de tener que volver a escribirlo, sino solo llamar por su nombre. una funcion no puede retornar nada, solo puede ejecutar acciones pero ningun tipo de dato o de valor. en cuanto la funcion retorne algun tipo de valor esta se terminara.(como si fuera un break)</p>
+				<h4>return:</h4>
+					<p>un "return" es una sentencia que nos permite hacer que una funcion nos retorne un dato.</p>
+				<h4>funciones en Flecha:</h4>
+					<p></p>
+		<h1>Capitulo 3: Programacion orientada a objetos(POO)</h1>
+			<h3>Conceptos de la progamacion orientada a obetos:</h3>
+				<p>algunos de los concepto de este tipo deprogamacion son:</p>
+					<ul>
+						<li><b>Clase:</b>Cuando designamos una clase estams designando una clase donde podremos crear objetos.</li>
+						<li><b>Objetos:</b>Son el resulta do de las clases que creamos.</li>
+						<li><b>Atributos:</b>Son las caracteristicas que posee nuestro objeto</li>
+						<li><b>Metodo:</b>Son las acciones que puede realizar nuestro objeto.</li>
+						<li><b>Constructor:</b>es una funcion obligatoria que posee la clase para realizar las propiedades del objeto</li>
+						<li><b>Instanciacion:</b></li>
+					</ul>
+			<h3>Caracteristicas de la POO:</h3>
+				<h4>Abstraccion:</h4>
+				 	<p>La abstraccion es la idea de resumir los metodos o caracteristicas lo mas posible o hasta lo fundamental</p>
+				 <h4>Modularidad:</h4>
+				 	<p>La modularidad es la accion de resolver un problema grande a traves de su descomposicion su separacion en varias partes.</p>
+				 <h4>Encapsulamiento:</h4>
+				 	<p>Es la privacion de los datos para que no sean visibles para el usuario.</p>
+				 <h4>Polimorfismo:</h4>
+				 	<p>Es la capacidad que tiene un objeto de comportarse distinto ante un metodo por las caracteristicas que tiene.</p>
+			<h3>Otros conceptos de la POO:</h3>
+				<h4>Herencia:</h4>
+					<p> </p>
+			<h3>Metodos</h3>
+					<h4>Math:</h4>
+						<p>random and ceil</p>
+			<h3></h3>
+		<script type="text/javascript" src="codigo.js"></script>
+	</body>
+</html>

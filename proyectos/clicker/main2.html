@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main2.css" />
+  </head>
+  <body>
+    <!-- FILTRO -->
+    <div id="contenedor-maximo"></div>
+    <!-- ALERTAS -->
+    <div id="alertas" role="alert"></div>
+    <!-- MODALES -->
+    <div class="mi-modal display-0" id="modal-estadisticas">
+      <h1>Estadisticas</h1>
+      <h3>General</h3>
+      <p id="total-contador">maximo alcanzado del contador:</p>
+      <p id="tiempo-partida">partida iniciada hace:</p>
+      <p id="edificios-cantidad">edificios totales:</p>
+      <h3>Mejoras</h3>
+      <h3>Logros</h3>
+      <div class="botones-end">
+        <button class="btn-less btn-red" id="btn-cerrar-estadisticas">
+          hecho
+        </button>
+      </div>
+    </div>
+
+    <div class="mi-modal display-0" id="modal-exportar-partida">
+      <h1>Exportar Partida</h1>
+      <textarea
+        name=""
+        id="textarea-modal-exportar"
+        cols="90"
+        rows="10"
+        disabled
+      ></textarea>
+      <div class="botones-end">
+        <button class="btn-less btn-red" id="btn-cancelar-exportar">
+          hecho
+        </button>
+      </div>
+    </div>
+
+    <div class="mi-modal display-0" id="modal-importar-partida">
+      <h1>Importar Partida</h1>
+      <textarea
+        value=""
+        id="textarea-modal-importar"
+        cols="90"
+        rows="10"
+      ></textarea>
+      <div class="botones-end">
+        <button class="btn-less btn-red" id="btn-cancelar-importar">
+          cancelar
+        </button>
+        <button class="btn-less btn-green" id="btn-importar-datos">
+          importar
+        </button>
+      </div>
+    </div>
+    <!-- CENTRAL -->
+    <div id="root">
+      <!-- BOTONES MODALES -->
+      <header>
+        <div class="centrar-items-X">
+          <button class="btn-less btn-blue" id="btn-modal-estadisticas">
+            Estadisticas
+          </button>
+          <button class="btn-less btn-green" id="btn-modal-exportar">
+            Expotar
+          </button>
+          <button class="btn-less btn-green" id="btn-modal-importar">
+            Importar
+          </button>
+          <button class="btn-less btn-red" id="btn-borrar-datos">
+            Borrar Partida
+          </button>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <div id="contenedor">
+        <div id="sector-mejoras" class="centrar-items-X centrar-items-Y"></div>
+        <main class="centrar-items-X">
+          <h1 id="display">0</h1>
+          <h3 id="ingresos-S">ingresos por segundo: $0/s</h3>
+          <button class="btn btn-blue" id="btn-inicial">
+            inicial +1/click
+          </button>
+        </main>
+        <div id="global" class="centrar-items-X">
+          <div id="edificios"></div>
+        </div>
+      </div>
+    </div>
+    <!-- SECCION DE ANIMACION CLICK -->
+    <div class="contenedor-numero-click"></div>
+
+    <!-- SCRIPT -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+      integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../librerias/swarmNumbers/JSON.js"></script>
+    <script type="text/javascript" src="edificios.js"></script>
+    <script type="text/javascript" src="mejoras.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

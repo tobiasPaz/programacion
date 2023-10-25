@@ -1,0 +1,202 @@
+selector {
+	propiedad: valor;
+}
+* {
+	color: red;
+}
+
+h1 {
+	color: blue;
+}
+button {
+	color: purple;
+}
+.titulo-de-h1 {
+	color: pink;
+}
+[atributo="para-modificar"] {
+	color: yellow;
+}
+h1 h2 {
+	color: lightblue;
+}
+p:hover {
+	color: black;
+}
+.form {
+	font-size: 25px;
+}
+.form__h1 {
+	font-side: 2em;
+	font-family: cursive; line-height: 2;
+	font-weight: normal;
+}
+* {
+	font-family: 'Martian Mono', monospace;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 10px;
+}
+h2 {
+	background-color: darkblue;
+	display: inline-block;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: center;
+	border-radius: 1em;
+	border: 6px solid red;
+	box-shadow: 2px 4px 15px 0 #000;
+	transform: rotate(45deg);
+}
+* {
+	font-family: 'Martian Mono', monospace;
+	font-weight: 100;
+	font-size: 30px;
+}
+.form {
+	width: 200px;
+	height: 200px;
+	background: red;
+	margin: auto;
+	outline: 10px solid blue;
+	box-sizing: content-box;
+}
+.form2 {
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	margin: auto;
+}
+
+
+
+
+* {
+	font-size: 50px;
+}
+#titulo {
+	color: red;
+}
+p.especial {
+	color: pink;
+}
+p.texto {
+	color: blue;
+}
+div p {
+	color: green;
+}
+div h2, div h3 {
+	color: white;
+}
+.color {
+	/* para poner colores se pude usar el termino sexagesimal, el primer dijito es del color rojo, el segundo dijito es del verde y el ultimo es del azul */
+	color: #000;
+}
+.color {
+	/* para poner los colores tambien se puede utilizar el termin "rgb" y se organiza igual al sistema sexagesimal */
+	color: rgb(0, 0, 0);
+}
+.color {
+	/*border: 5px black dotted;*/
+	border-style: solid;
+	border-color: blue;
+	border-radius: 5px;
+	/*podemos usar medidas relativas o medidas absolutas, algunas de las medidas absolutas son; cm, mm, in, etc.*/
+	/*las medidas absolutas son: em. rem*/
+	border-width: 2rem;
+}
+#back-ground {
+	/*con el elemento background podemos controlar el fondo de la caja*/
+	background-color: rgba(0, 0, 0);
+	/*con el elemnto opacity podemos controlar la transparencia*/
+	opacity: 1.0;
+	/*con el elemnto image podemos agregar imagenes*/
+	height: 400px;
+	background-image: url("../../../imagenes/Todo_o_nada.png");
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position:  right top;
+	background: #f00 url("../../../imagenes/Todo_o_nada.png") repeat-y right top;
+}	
+.de-margen {
+	background-color: red;
+	margin: 5px 10px 15px 20px;
+	padding: 20px 15px 10px 5px;
+	border: solid blue 1px;
+	/*con el elemento "overflow" podemos condidionar si el texto saliente de la caja es visible o no- Lo podemos combinar con "visivle", scrol o hiden"*/
+	overflow: hidden;
+	outline: 1px solid red;
+}
+.texto-2 {
+	text-align: center;
+	/*con "text-decoration" podemos decorar el texto, con lineas por encima, enfrente o por debajo del texto*/
+	text-decoration: overline;
+	text-shadow: 3px 5px 2px blue;
+	font-family: sans-serif;
+}
+a:link {
+	color: orange;
+}
+a:visited {
+	color: grey;
+}
+a:hover {
+	color: red;
+}
+a:active {
+	color: pink;
+}
+ul {
+	background-color: purple;
+	list-style-type: none;
+	padding-left: 0;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+th, td {
+	border: solid 1px;
+	padding: 5px;
+}
+th {
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+/*odd=par even=impar*/
+tr:nth-child(even) {
+	background-color: #eee;
+}
+tr:hover {
+	background-color: #aaa;
+	cursor: pointer;
+}
+span {
+	display: block;
+	/*visibility: hidden;*/
+	max-width: 300px;
+	background-color: #900;
+}
+.div-de-prueba {
+	display: inline;
+}
+#position {
+	position: sticky;
+	left: 20px;
+	top: 20px;
+}
+.left {
+	float: left;
+	width: 300px;
+}
+.container {
+	height: 400px;
+}
+.right
+{
+	float: right;
+}
